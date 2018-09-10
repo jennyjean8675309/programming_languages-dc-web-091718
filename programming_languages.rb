@@ -10,7 +10,7 @@ def reformat_languages(languages)
         just_styles << styles
       end
       just_styles
-      binding.pry
+ 
      
       if new_hash[lang_hashes] == nil || new_hash.keys.include?(lang_names) == false && lang_hashes.include?(lang_names)
         new_hash[lang_names] = {}
@@ -20,6 +20,7 @@ def reformat_languages(languages)
       end
     end
   end
+  binding.pry
   new_hash
 end
 
