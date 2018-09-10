@@ -4,10 +4,13 @@ def reformat_languages(languages)
   new_hash = {}
   just_styles = []
   languages.each do |styles, lang_hashes|
-       
+     if just_styles[0] == nil || just_styles.include?(styles) == false && lang_hashes.include?(lang_names) 
+       just_styles << styles
+     end
+     binding.pry
     lang_hashes.each do |lang_names, attributes|
-     # if just_styles[0] == nil || just_styles.include?(styles) == false && lang_hashes.include?(lang_names)
-        just_styles << styles
+     
+  
       end
       binding.pry
       lang_hashes[lang_name][:style] = just_styles
