@@ -12,6 +12,7 @@ def reformat_languages(languages)
         name_styles[lang_names] << styles
       end
     end
+    name_styles
   end
   name_styles
         if new_hash[lang_hashes] == nil || new_hash.keys.include?(lang_names) 
