@@ -6,7 +6,6 @@ def reformat_languages(languages)
   languages.each do |styles, lang_hashes|
      if just_styles[0] == nil || just_styles.include?(styles) == false && lang_hashes.include?(lang_names) 
        just_styles << styles
-       languages[lang_hashes]
      end
      binding.pry
     lang_hashes.each do |lang_names, attributes|
