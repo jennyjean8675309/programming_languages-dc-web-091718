@@ -14,6 +14,7 @@ def reformat_languages(languages)
         languages[styles].keys.each do |program_name|
           if program_name == lang_names
             lang_styles << styles
+            binding.pry
             new_hash[lang_names][:style] = lang_styles
         
           end
