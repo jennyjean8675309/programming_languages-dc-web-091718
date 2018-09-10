@@ -9,6 +9,7 @@ def reformat_languages(languages)
       if just_styles[0] == nil || just_styles.include?(styles) == false && lang_hashes.include?(lang_names)
         just_styles << styles
         lang_hashes[lang_names][:style] = just_styles
+        binding.pry
       end
       binding.pry
       languages
