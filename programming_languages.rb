@@ -10,6 +10,8 @@ def reformat_languages(languages)
         just_styles << styles
         lang_hashes[lang_names][:style] = just_styles
       end
+      binding.pry
+      languages
     end
       binding.pry
        
