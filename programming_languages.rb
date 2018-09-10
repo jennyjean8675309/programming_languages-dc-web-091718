@@ -11,10 +11,11 @@ def reformat_languages(languages)
       else 
         name_styles[lang_names] << styles
       end
-      binding.pry
-      name_styles
     end
   end
+  binding.pry
+  name_styles
+  
 end
       
       
