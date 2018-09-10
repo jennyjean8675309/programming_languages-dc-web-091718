@@ -9,7 +9,7 @@ def reformat_languages(languages)
     lang_hashes.each do |lang_names, attributes|
 
       lang_hashes[lang_names][:style] = just_styles
-      if new_hash[lang_hashes] == nil || new_hash.keys.include?(lang_names) && lang_hashes.keys.include?(lang_names)
+      if new_hash[lang_hashes] == nil || new_hash.keys.include?(lang_names) && 
         new_hash[lang_names] = attributes
         if 
         new_hash[lang_names][:style] = just_styles << styles
