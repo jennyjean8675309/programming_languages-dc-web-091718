@@ -11,10 +11,10 @@ def reformat_languages(languages)
       if new_hash[lang_hashes] == nil || new_hash.keys.include?(lang_names) == false
         new_hash[lang_names] = {}
         new_hash[lang_names] = attributes
-        languages.keys.each do |styles|
+        languages.keys.each do |style_names|
           languages[styles].keys.each do |program_name|
           if program_name == lang_names
-            lang_styles << styles
+            lang_styles << style_names
           end
             new_hash[lang_names][:style] = lang_styles
           end
