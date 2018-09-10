@@ -12,14 +12,11 @@ def reformat_languages(languages)
         new_hash[lang_names] = {}
         new_hash[lang_names] = attributes
       end
-      languages.keys.each do |style_name|
-          binding.pry
-          
-            new_hash[lang_names][:style] = lang_styles
-          end
+      
+    end
       end
   
-    end
+    
 new_hash
   end
 
