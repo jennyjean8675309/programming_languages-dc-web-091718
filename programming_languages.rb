@@ -15,7 +15,6 @@ def reformat_languages(languages)
           if program_name == lang_names
             lang_styles << styles
           end
-          binding.pry
             new_hash[lang_names][:style] = lang_styles
         
         end
