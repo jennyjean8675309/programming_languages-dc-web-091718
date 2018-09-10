@@ -14,8 +14,10 @@ def reformat_languages(languages)
         if lang_hashes.keys.include?(lang_names)
           binding.pry
           just_styles << styles
-        new_hash[lang_names][:style] = just_styles
         end
+        new_hash[lang_names][:style] = just_styles
+      end
+      end
       end
     end
   end
