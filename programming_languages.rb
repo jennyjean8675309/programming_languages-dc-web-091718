@@ -16,9 +16,6 @@ def reformat_languages(languages)
          new_hash[lang_names] = attributes
         end
       end
- 
-       
-      end
   end
   new_hash
 end
