@@ -2,6 +2,7 @@ require 'pry'
 
 def reformat_languages(languages)
   new_hash = {}
+  lang_styles = []
   languages.each do |styles, lang_hashes|
   
     
@@ -11,7 +12,9 @@ def reformat_languages(languages)
         new_hash[lang_names] = {}
         new_hash[lang_names] = attributes
           if languages[styles].keys.include?(lang_names)
-              new_hash[lang_names][:style] = styles
+            lang_styles << styles
+          end
+          new_hash[lang_names][style] = lang_styles
       end
       end
   
