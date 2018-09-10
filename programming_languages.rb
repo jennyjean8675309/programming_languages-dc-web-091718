@@ -11,7 +11,7 @@ def reformat_languages(languages)
        
       end
       binding.pry
-      languages
+      language
  
      
       if new_hash[lang_hashes] == nil || new_hash.keys.include?(lang_names) == false && lang_hashes.include?(lang_names)
