@@ -5,7 +5,6 @@ def reformat_languages(languages)
   name_styles = {}
   languages.each do |styles, lang_hashes|
     lang_hashes.each do |lang_names, attributes|
-      
       if name_styles[lang_names] == nil 
         name_styles[lang_names] = [styles]
       else 
