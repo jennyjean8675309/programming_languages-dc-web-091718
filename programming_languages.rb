@@ -8,6 +8,7 @@ def reformat_languages(languages)
     lang_hashes.each do |lang_names, attributes|
       if just_styles[0] == nil || just_styles.include?(styles) == false && lang_hashes.include?(lang_names)
         binding.pry
+      end
      
       if new_hash[lang_hashes] == nil || new_hash.keys.include?(lang_names) == false && lang_hashes.include?(lang_names)
         new_hash[lang_names] = {}
