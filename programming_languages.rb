@@ -10,6 +10,7 @@ def reformat_languages(languages)
         if languages[styles].include?(lang_names)
         new_hash[lang_names][:style] = "waz up"
       end
+      end
       binding.pry
     end
   binding.pry
