@@ -13,7 +13,7 @@ def reformat_languages(languages)
         new_hash[lang_names] = attributes
         if lang_hashes.keys.include?(lang_names)
           new_hash[lang_names][:style] = just_styles << styles
-        binding.pry
+  
       end
       
       end
