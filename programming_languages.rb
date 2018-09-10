@@ -12,10 +12,9 @@ def reformat_languages(languages)
         name_styles[lang_names] << styles
       end
       name_styles
-        if new_hash[lang_hashes] == nil || new_hash.keys.include?(lang_names) 
-         new_hash[lang_names] = attributes
-         new_hash[lang_names][:style] = name_styles[lang_names]
-        end
+      new_hash[lang_names] = attributes
+      new_hash[lang_names][:style] = name_styles[lang_names]
+    end
   end
 end
       new_hash
