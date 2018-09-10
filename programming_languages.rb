@@ -12,7 +12,8 @@ def reformat_languages(languages)
         new_hash[lang_names] = {}
         new_hash[lang_names] = attributes
         languages.keys.each do |style_name|
-          if languages[style_name].keys.include?(lang_names)
+          binding.pry
+          if languages[style_name].include?(lang_names)
       binding.pry
             lang_styles << style_name
           end
