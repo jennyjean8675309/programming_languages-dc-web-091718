@@ -11,7 +11,8 @@ def reformat_languages(languages)
       if new_hash[lang_hashes] == nil || new_hash.keys.include?(lang_names) == false
         new_hash[lang_names] = {}
         new_hash[lang_names] = attributes
-          if languages[styles].keys.include?(lang_names)
+        languages[styles].keys.each do |program_name|
+          languages[styles].keys == lang_names
             lang_styles << styles
            
             new_hash[lang_names][:style] = lang_styles
