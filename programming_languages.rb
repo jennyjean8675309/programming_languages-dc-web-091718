@@ -8,7 +8,7 @@ def reformat_languages(languages)
     
     lang_hashes.each do |lang_names, attributes|
       if lang_hashes.include?(lang_names)
-        attributes[:style] = styles
+        attributes[:style] = lang_styles.push(styles)
        
        
       end
