@@ -14,8 +14,6 @@ def reformat_languages(languages)
         new_hash[lang_names] = attributes
     
       end
-      binding.pry
-      new_hash
     end
   end
       binding.pry
